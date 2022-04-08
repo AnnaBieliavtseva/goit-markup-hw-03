@@ -4,7 +4,7 @@
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
   --accent-bg-color: #2f303a;
-  --filters-bg-color: #f5f4fa;
+  --secondary-bg-color: #f5f4fa;
 }
 
 body {
@@ -12,6 +12,26 @@ body {
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
   letter-spacing: 0.03em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 1px solid red;
 }
 
 /* Header */
@@ -67,6 +87,8 @@ body {
 }
 
 .hero-title {
+  margin-bottom: 30px;
+
   color: var(--primary-white-color);
   font-weight: 900;
   font-size: 44px;
@@ -77,17 +99,20 @@ body {
 }
 
 .hero-btn {
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 4px;
+  min-width: 200px;
+
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.58;
-  text-align: center;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.06em;
   cursor: pointer;
+  text-align: center;
 }
 
 .visually-hidden {
@@ -129,6 +154,10 @@ body {
 }
 
 /* Section Team */
+
+.team {
+  background-color: var(--secondary-bg-color);
+}
 
 .team-list-title {
   color: var(--title-text-color);
@@ -181,7 +210,7 @@ body {
 /* Page Portfolio */
 
 .filter-btn {
-  background-color: var(--filters-bg-color);
+  background-color: var(--secondary-bg-color);
   color: var(--title-text-color);
   font-family: inherit;
   font-weight: 500;
@@ -203,6 +232,10 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+}
+
+.card-list-link {
+  text-decoration: none;
 }
 
 .card-list-text {
