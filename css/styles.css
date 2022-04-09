@@ -26,21 +26,51 @@ p {
   margin-bottom: 0;
 }
 
+/* Utilities ---------------------------*/
+
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
-  outline: 1px solid red;
+  margin-left: auto;
+  margin-right: auto;
+  /* outline: 1px solid red; */
 }
 
-/* Header */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.list {
+  list-style: none;
+}
+
+/* Header--------------------------------- */
 
 .page-header {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.main-header {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -56,7 +86,27 @@ p {
   color: var(--accent-color);
 }
 
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+/* Site-nav---------------------------------- */
+
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+
+.site-nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .site-nav-link {
+  display: block;
+  padding-bottom: 32px;
+  padding-top: 32px;
+
   color: var(--title-text-color);
   text-decoration: none;
 }
@@ -70,6 +120,17 @@ p {
   color: var(--accent-color);
 }
 
+/* Contact-list ---------------------------------*/
+
+.contact-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.contact-list-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .contact-list-link {
   color: var(--primary-text-color);
   text-decoration: none;
@@ -80,13 +141,15 @@ p {
   color: var(--accent-color);
 }
 
-/* Section Hero */
+/* Section Hero--------------------------------- */
 
 .hero {
   background-color: var(--accent-bg-color);
+  text-align: center;
 }
 
 .hero-title {
+  margin-top: 0;
   margin-bottom: 30px;
 
   color: var(--primary-white-color);
@@ -103,6 +166,7 @@ p {
   padding: 10px 32px;
   border-radius: 4px;
   min-width: 200px;
+  text-align: center;
 
   color: var(--primary-white-color);
   background-color: var(--accent-color);
@@ -112,24 +176,25 @@ p {
   line-height: 1.58;
   letter-spacing: 0.06em;
   cursor: pointer;
-  text-align: center;
 }
 
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
+/* Section Features -----------------------------*/
+
+.feature-list {
+  display: flex;
 }
-/* Section Features */
+
+.feature-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.feature-list-item:first-child {
+  margin-left: auto;
+}
 
 .feature-list-title {
+  margin-bottom: 10px;
+
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -146,6 +211,8 @@ p {
 
 .about-title,
 .team-title {
+  margin-bottom: 50px;
+
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -159,7 +226,13 @@ p {
   background-color: var(--secondary-bg-color);
 }
 
+.team-list-image {
+  margin-bottom: 30px;
+}
+
 .team-list-title {
+  margin-bottom: 10px;
+
   color: var(--title-text-color);
   font-size: 16px;
   font-weight: 500;
@@ -179,6 +252,8 @@ p {
 }
 
 .page-footer .logo {
+  margin-bottom: 20px;
+
   color: var(--primary-white-color);
 }
 
@@ -190,6 +265,8 @@ p {
 }
 
 .address-list-link {
+  margin-bottom: 9px;
+
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
@@ -201,10 +278,6 @@ p {
 .address-list-link:hover,
 .address-list-link:focus {
   color: var(--accent-color);
-}
-
-.list {
-  list-style: none;
 }
 
 /* Page Portfolio */
