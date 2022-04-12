@@ -44,7 +44,7 @@
     </header>
 
     <main>
-      <section class="section hero">
+      <section class="hero">
         <div class="container">
           <h1 class="hero-title">
             Эффективные решения <br />
@@ -118,8 +118,10 @@
                 width="270"
                 class="team-list-image"
               />
-              <h3 class="team-list-title">Игорь Демьяненко</h3>
-              <p lang="en" class="team-list-text">Product Designer</p>
+              <div class="team-box">
+                <h3 class="team-list-title">Игорь Демьяненко</h3>
+                <p lang="en" class="team-list-text">Product Designer</p>
+              </div>
             </li>
             <li class="team-list-item">
               <img
@@ -128,8 +130,10 @@
                 width="270"
                 class="team-list-image"
               />
-              <h3 class="team-list-title">Ольга Репина</h3>
-              <p lang="en" class="team-list-text">Frontend Developer</p>
+              <div class="team-box">
+                <h3 class="team-list-title">Ольга Репина</h3>
+                <p lang="en" class="team-list-text">Frontend Developer</p>
+              </div>
             </li>
             <li class="team-list-item">
               <img
@@ -138,8 +142,10 @@
                 width="270"
                 class="team-list-image"
               />
-              <h3 class="team-list-title">Николай Тарасов</h3>
-              <p lang="en" class="team-list-text">Marketing</p>
+              <div class="team-box">
+                <h3 class="team-list-title">Николай Тарасов</h3>
+                <p lang="en" class="team-list-text">Marketing</p>
+              </div>
             </li>
             <li class="team-list-item">
               <img
@@ -159,18 +165,24 @@
     <footer class="page-footer">
       <div class="container">
         <a href="./index.html" class="logo"><span class="accent">Web</span>Studio</a>
-        <address class="address-list">
-          <a
-            href="https://goo.gl/maps/VBoa3moozV9XbzGw7"
-            target="_blank"
-            rel="noopenner nofollow norefferrer"
-            class="address-list-link address"
-            >г. Киев, пр-т Леси Украинки, 26</a
-          >
-
-          <br />
-          <a href="mailto:info@example.com" class="address-list-link">info@example.com</a><br />
-          <a href="tel:+380991111111" class="address-list-link">+38 099 111 11 11</a>
+        <address>
+          <ul class="address-list list">
+            <li class="address-list-item">
+              <a
+                href="https://goo.gl/maps/VBoa3moozV9XbzGw7"
+                target="_blank"
+                rel="noopenner nofollow norefferrer"
+                class="address-list-link address"
+                >г. Киев, пр-т Леси Украинки, 26</a
+              >
+            </li>
+            <li class="address-list-item">
+              <a href="mailto:info@example.com" class="address-list-link">info@example.com</a>
+            </li>
+            <li class="address-list-item">
+              <a href="tel:+380991111111" class="address-list-link">+38 099 111 11 11</a>
+            </li>
+          </ul>
         </address>
       </div>
     </footer>
